@@ -30,8 +30,12 @@
 		}
 		div.titlename:hover
 		{
-			background-color: #aaa;
-			color: #111;
+			/*background-color: #aaa;
+			color: #111;*/
+			animation: titlehover 0.25s;
+			animation-fill-mode:forwards;
+			-webkit-animation: titlehover 0.25s; /* Safari and Chrome */
+			-webkit-animation-fill-mode:forwards;
 		}
 		div.titlename h1
 		{
@@ -52,6 +56,16 @@
 			width: 100%;
 			height: 20%;
 			background-image: linear-gradient(#111 0%,#161616 50%,#202020 85%,#222 100%);
+		}
+		@keyframes titlehover
+		{
+			from {background-color: #eee; color: #111;}
+			to {background-color: #aaa; color: #111;}
+		}
+		@-webkit-keyframes titlehover /* Safari and Chrome */
+		{
+			from {background-color: #eee; color: #111;}
+			to {background-color: #aaa; color: #111;}
 		}
 	</style>
 </head>
