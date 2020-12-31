@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CPK.MOE</title>
+	<style type="text/css">
+		a:link 		{text-decoration:none; color:inherit;}
+		a:visited 	{text-decoration:none; color:inherit;}
+		a:hover 	{text-decoration:none; color:inherit;}
+		a:active 	{text-decoration:none; color:inherit;}
+		a:focus 	{text-decoration:none; color:inherit;}
+		body
+		{
+			background-color: #111;
+		}
+		div.titlename
+		{
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 50%;
+			left: 50%;
+			width: 50%;
+			display: block;
+			border-style: solid;
+			border-width: 2px;
+			border-color: #eee;
+			transform: translate(-50%,-50%);
+			color: #eee;
+		}
+		div.titlename:hover
+		{
+			/*background-color: #aaa;
+			color: #111;*/
+			animation: titlehover 0.25s;
+			animation-fill-mode:forwards;
+			-webkit-animation: titlehover 0.25s; /* Safari and Chrome */
+			-webkit-animation-fill-mode:forwards;
+		}
+		div.titlename h1
+		{
+			margin: 0;
+			text-align: center;
+			font-family: "微软雅黑 Light","Arial","Helvetica";
+			font-weight:normal;
+			font-size: 200%;
+			letter-spacing:8px;
+		}
+		div.fade 
+		{
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 80%;
+			left: 0;
+			width: 100%;
+			height: 20%;
+			background-image: linear-gradient(#111 0%,#161616 50%,#202020 85%,#222 100%);
+		}
+		@keyframes titlehover
+		{
+			from {background-color: #eee; color: #111;}
+			to {background-color: #aaa; color: #111;}
+		}
+		@-webkit-keyframes titlehover /* Safari and Chrome */
+		{
+			from {background-color: #eee; color: #111;}
+			to {background-color: #aaa; color: #111;}
+		}
+	</style>
+</head>
+<body>
+	<div class="titlename"><a href="https://cpk.moe/"><h1>TEST</h1></a></div>
+	<div class="fade" />
+</body>
+</html>
